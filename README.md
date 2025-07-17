@@ -20,17 +20,18 @@ pip install -r requirements.txt
 
 **Serve the Model in the Server**
 ```bash
-# With 1 GPU
+# With 1 GPU:
 vllm serve <model_name>
 
-# With 2 GPUs and so on.
+# With 2 GPUs and so on:
 vllm serve <model_name> --tensor-parallel-size 2
 ```
 
 **Run the script:**
 
 ```bash
-# Change the model to the one that you're serveing in the server
+# Create the .env file first.
+# Change the model to the one that you're serveing in the server.
 python LLM.py
 ```
 
