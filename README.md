@@ -1,19 +1,13 @@
-## A Script to use vLLM server at M-416 from anywhere
-
+# A Script to use vLLM server at M-416 from anywhere
+## Server
 ### Installation
-
-**Install Requirements:**
-
-```bash
-pip install -r requirements.txt
-```
-
-**If you use Conda:**
+**Use Conda:**
 
 ```bash
-conda create -n vllm-client python=3.12
-conda activate vllm-client
-pip install -r requirements.txt
+conda create -n myenv python=3.12 -y
+conda activate myenv
+pip install --upgrade uv
+uv pip install vllm --torch-backend=auto
 ```
 
 ### Usage
@@ -25,6 +19,15 @@ vllm serve <model_name>
 
 # With 2 GPUs and so on:
 vllm serve <model_name> --tensor-parallel-size 2
+```
+## Client 
+### Installation
+**Use Conda:**
+
+```bash
+conda create -n vllm-client python=3.12
+conda activate vllm-client
+pip install -r requirements.txt
 ```
 
 **Run the script:**
