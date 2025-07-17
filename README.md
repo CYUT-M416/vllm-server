@@ -1,6 +1,7 @@
 # A Script to use vLLM server at M-416 from anywhere
 ## Server
-### Installation
+### Install [vllm](https://docs.vllm.ai/en/latest/getting_started/quickstart.html#offline-batched-inference)
+
 **Use Conda:**
 
 ```bash
