@@ -1,0 +1,7 @@
+# Run in the server
+
+# With 1 GPU
+vllm serve <model_name>
+
+# With 2 GPUs
+vllm serve <model_name> --tensor-parallel-size 2

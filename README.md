@@ -1,0 +1,29 @@
+## A Script to use vLLM server at M-416 from anywhere
+
+### Installation
+
+**Install Requirements:**
+
+```bash
+pip install -r requirements.txt
+```
+
+**If you use Conda:**
+
+```bash
+conda create -n vllm-client python=3.12
+conda activate vllm-client
+pip install -r requirements.txt
+```
+
+### Usage
+
+**Run the script:**
+
+```bash
+python LLM.py
+```
+
+### Note
+
+Please set up your development environment and execute all code on your local machine. The Large Language Model (LLM) will be the only component running on the server.
