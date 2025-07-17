@@ -30,7 +30,7 @@ vllm serve <model_name> --tensor-parallel-size 2
 **Run the script:**
 
 ```bash
-# Change the model same as the one you serveing in the server
+# Change the model to the one that you're serveing in the server
 python LLM.py
 ```
 
