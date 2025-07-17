@@ -18,6 +18,15 @@ pip install -r requirements.txt
 
 ### Usage
 
+**Serve the Model in the Server**
+```bash
+# With 1 GPU
+vllm serve <model_name>
+
+# With 2 GPUs and so on.
+vllm serve <model_name> --tensor-parallel-size 2
+```
+
 **Run the script:**
 
 ```bash
